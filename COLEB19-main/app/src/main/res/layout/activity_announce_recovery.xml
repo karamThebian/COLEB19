@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnnounceRecovery">
+
+    <ImageView
+        android:id="@+id/logoLogin2"
+        android:layout_width="211dp"
+        android:layout_height="177dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/registerTextView2"
+        android:layout_width="305dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="38dp"
+        android:text="Recovered from COVID19? Kindly press button below to announce it and let others know!"
+        android:textAlignment="center"
+        android:textColor="#083b66"
+        android:textSize="9pt"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin2" />
+
+    <Button
+        android:id="@+id/register3"
+        android:layout_width="140dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="136dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-black"
+        android:onClick="announceRecovery"
+        android:paddingLeft="6dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:shadowColor="#083b66"
+        android:text="Announce Recovery"
+        android:textColor="#083b66"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTextView2"
+        tools:shadowColor="#083b66" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "732425675187",
+    "project_id": "coleb19",
+    "storage_bucket": "coleb19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732425675187:android:4d575d4da1bc156ef2ebc6",
+        "android_client_info": {
+          "package_name": "com.example.coleb19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732425675187-5bmd119s66iur3bp8d6dh9qs6mi4h1bu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGrMx7qRvGv5ZLzwciERrD5bfDTW4rLIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732425675187-5bmd119s66iur3bp8d6dh9qs6mi4h1bu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

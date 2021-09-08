@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAsCovid19PatientActivity">
+
+    <EditText
+        android:id="@+id/rPhoneNo"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#55c6c9"
+        android:ems="10"
+        android:hint="Phone Number "
+        android:includeFontPadding="true"
+        android:inputType="phone"
+        android:paddingLeft="11dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="#083b66"
+        android:textColorHint="#083b66"
+        android:textSize="8pt"
+        android:textStyle="normal|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rAge"
+        tools:textColorHint="#083b66" />
+
+    <EditText
+        android:id="@+id/rFullName"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#55c6c9"
+        android:ems="10"
+        android:hint="Full Name"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:paddingLeft="11dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="#083b66"
+        android:textColorHint="#083b66"
+        android:textSize="8pt"
+        android:textStyle="normal|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTextView"
+        tools:textColorHint="#083b66" />
+
+    <EditText
+        android:id="@+id/rAge"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#55c6c9"
+        android:ems="10"
+        android:hint="Age"
+        android:includeFontPadding="true"
+        android:inputType="number"
+        android:paddingLeft="11dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="#083b66"
+        android:textColorHint="#083b66"
+        android:textSize="8pt"
+        android:textStyle="normal|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rFullName"
+        tools:textColorHint="#083b66" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:text="Register As COVID-19 Patient:"
+        android:textColor="#083b66"
+        android:textSize="9pt"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rBloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:text="Blood Type:"
+        android:textColor="#083b66"
+        android:textSize="8pt"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rGetLocation" />
+
+    <RadioGroup
+
+        android:id="@+id/radioGroup2"
+        android:layout_width="348dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rRhesusGroup">
+
+        <RadioButton
+            android:id="@+id/radioButtonP"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:buttonTint="#083b66"
+            android:text="Positive"
+            android:textColor="#083b66"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rRhesusGroup"
+            tools:textColor="#083b66" />
+
+        <RadioButton
+            android:id="@+id/radioButtonN"
+            android:layout_width="119dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:buttonTint="#083b66"
+            android:text="Negative"
+            android:textColor="#083b66"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rRhesusGroup"
+            tools:textColor="#083b66" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+
+        android:id="@+id/radioGroup"
+        android:layout_width="348dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rBloodType">
+
+        <RadioButton
+            android:id="@+id/radioButtonA"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:buttonTint="#083b66"
+            android:text="A"
+            android:textColor="#083b66"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rBloodType"
+            tools:textColor="#083b66" />
+
+        <RadioButton
+            android:id="@+id/radioButtonB"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:buttonTint="#083b66"
+            android:text="B"
+            android:textColor="#083b66"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rBloodType"
+            tools:textColor="#083b66" />
+
+        <RadioButton
+            android:id="@+id/radioButtonO"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:buttonTint="#083b66"
+            android:text="O"
+            android:textColor="#083b66"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rBloodType"
+            tools:textColor="#083b66" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAB"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:buttonTint="#083b66"
+            android:text="AB"
+            android:textColor="#083b66"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rBloodType"
+            tools:textColor="#083b66" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/rRhesusGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Rhesus Group:"
+        android:textColor="#083b66"
+        android:textSize="8pt"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="138dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-black"
+        android:onClick="Register"
+        android:paddingLeft="6dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:shadowColor="#083b66"
+        android:text="Register"
+        android:textColor="#083b66"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        tools:shadowColor="#083b66" />
+
+    <Button
+        android:id="@+id/rGetLocation"
+        android:layout_width="249dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-black"
+        android:onClick="OnClick"
+        android:paddingLeft="6dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:shadowColor="#083b66"
+        android:text="Get Current Location"
+        android:textColor="#083b66"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rPhoneNo"
+        tools:ignore="OnClick"
+        tools:shadowColor="#083b66" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

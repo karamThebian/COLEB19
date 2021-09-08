@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/registerMI"
+        android:title="Register As COVID19 Patient" />
+    <item
+        android:id="@+id/recovered"
+        android:title="Update COVID19 Status" />
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign Out" />
+</menu>
